@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "tutoawsamplifywebappa09d102d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
