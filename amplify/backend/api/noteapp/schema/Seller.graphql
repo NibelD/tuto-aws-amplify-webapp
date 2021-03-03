@@ -1,0 +1,10 @@
+type Seller @model {
+  id: ID!
+  name: String!
+  siren: String
+  codePays: String
+  codeTVA: String
+  email: String
+  iban: String
+}
+ 
