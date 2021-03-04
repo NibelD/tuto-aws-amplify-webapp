@@ -1,0 +1,18 @@
+amplify-authenticator {
+    --border-radius: 20px;
+    --width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100vh;
+  }
+
+  amplify-sign-up {
+    background-color: brown;
+    --border-radius: 2px;
+  }
+
+  amplify-footer {
+    background-color: rgb(42, 165, 165);
+  }
