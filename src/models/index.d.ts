@@ -17,6 +17,7 @@ export declare class Seller {
   readonly id: string;
   readonly name: string;
   readonly siren?: string;
+  readonly username: string;
   readonly codePays?: string;
   readonly codeTVA?: string;
   readonly email?: string;

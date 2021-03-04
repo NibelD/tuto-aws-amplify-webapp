@@ -2,6 +2,7 @@ type Seller @model {
   id: ID!
   name: String!
   siren: String
+  username: String!
   codePays: String
   codeTVA: String
   email: String

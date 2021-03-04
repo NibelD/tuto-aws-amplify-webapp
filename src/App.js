@@ -16,14 +16,7 @@ function App() {
   const [authState, setAuthState] = React.useState();
   const [user, setUser] = React.useState();
 
-//   const handleSignUp = async () => {
-//     console.log('yeah', formData)
-//     if (!isValidForm()) return;
-//     console.log('yeah')
-//     await API.graphql({ query: createSeller, variables: { input: formData } });
 
-//     setFormData(initialFormState);
-// };
 
   React.useEffect(() => {
     return onAuthUIStateChange((nextAuthState, authData) => {
@@ -40,8 +33,8 @@ function App() {
       <AmplifySignOut buttonText="Se déconnecter" />
       <br />
       <div>Connecté, {user.username}</div>
-      <h4>Votre todo {user.attributes.email}</h4>
-      <Todo />
+      <h4>Merci de compléter votre profil vendeur</h4>
+      <Inscription username={user.username}/>
     </div>
   ) : (
     <AmplifyAuthenticator>
@@ -53,18 +46,21 @@ function App() {
         headerText="Inscription Verso Retail Vendeur"
         slot="sign-up"
         formFields={[
-          { type: "username" },
-          { type: "password" },
-          { type: "email" },
+          {
+            type: "username",
+            label: "identifiant utilisateur *",
+          },
+          {
+            type: "password",
+            label: "Mot de passe *",
+          },
           { 
-            type: "siren",
-            label: "n° SIREN",
-            placeholder: "ex: 345676543456...",
-            required: true,
+            type: "email",
+            label: "Adresse email *",
+            placeholder: "ex: exemple@email-pro.com...", 
            },
         ]}
         submitButtonText="Créer mon compte"
-        // handleSubmit={() => handleSignUp()}
       ></AmplifySignUp>
     </AmplifyAuthenticator>
   );

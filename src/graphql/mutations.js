@@ -10,6 +10,7 @@ export const createSeller = /* GraphQL */ `
       id
       name
       siren
+      username
       codePays
       codeTVA
       email
@@ -31,6 +32,7 @@ export const updateSeller = /* GraphQL */ `
       id
       name
       siren
+      username
       codePays
       codeTVA
       email
@@ -52,6 +54,7 @@ export const deleteSeller = /* GraphQL */ `
       id
       name
       siren
+      username
       codePays
       codeTVA
       email

@@ -4,6 +4,7 @@ import { createSeller } from './graphql/mutations';
 
 
 const initialFormState = { 
+    username: '',
     name: '',
     siren: '',
     codePays: '',
@@ -11,7 +12,7 @@ const initialFormState = {
     email: '',
 }
 
-export default function Inscription() {
+export default function Inscription({ username }) {
     const [formData, setFormData] = useState(initialFormState);
 
     const isValidForm = () => {
@@ -26,6 +27,12 @@ export default function Inscription() {
 
         setFormData(initialFormState);
     };
+
+    useEffect(() => {
+        console.log('usern', username)
+        setFormData({ ...formData, 'username': username})
+        console.log('formData', formData)
+    }, [])
 
     return (
         <div>

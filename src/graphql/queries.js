@@ -18,6 +18,7 @@ export const syncSellers = /* GraphQL */ `
         id
         name
         siren
+        username
         codePays
         codeTVA
         email
@@ -39,6 +40,7 @@ export const getSeller = /* GraphQL */ `
       id
       name
       siren
+      username
       codePays
       codeTVA
       email
@@ -62,6 +64,7 @@ export const listSellers = /* GraphQL */ `
         id
         name
         siren
+        username
         codePays
         codeTVA
         email

@@ -81,6 +81,13 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
+                "username": {
+                    "name": "username",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
                 "codePays": {
                     "name": "codePays",
                     "isArray": false,
@@ -122,5 +129,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "b353c8f998ef841b9218ad8d6528b0d1"
+    "version": "a2028bde1cdf785cf8a1b016d06666ff"
 };
